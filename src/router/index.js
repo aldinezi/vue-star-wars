@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Notes from '@/components/Notes';
-import AddNote from '@/components/AddNote';
+import Starbase from '@/components/Starbase';
+import SW from '@/components/SW';
 
 Vue.use(Router);
 
@@ -9,13 +9,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Notes',
-      component: Notes,
+      name: 'SW',
+      component: SW,
     },
     {
-      path: '/add',
-      name: 'Add Note',
-      component: AddNote,
+      path: '/starbase/:type',
+      name: 'Starbase',
+      component: Starbase,
     },
   ],
 });
