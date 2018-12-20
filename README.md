@@ -1,5 +1,10 @@
 # vue-starwars
 
+> Sensless Star Wars app with vue
+
+[DEMO](http://aldinezi.tech/starbase)
+
+
 ## Project setup
 ```
 npm install
