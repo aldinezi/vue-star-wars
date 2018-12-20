@@ -10,7 +10,6 @@ import App from './App.vue';
 Vue.config.productionTip = false;
 
 Vue.use(ElementUI, { locale });
-
 Vue.filter('formatDate', (value) => {
   if (value) {
     return moment(String(value)).format('DD/MM/YYYY hh:mm');

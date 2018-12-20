@@ -1,4 +1,4 @@
-# vue-starwars
+# vue-star-wars
 
 > Sensless Star Wars app with vue
 
