@@ -2,7 +2,7 @@
 
 > Sensless Star Wars app with vue
 
-[DEMO](http://aldinezi.tech/starbase)
+[DEMO @ Netlify](https://vue-starwars.aldinezi.info/)
 
 
 ## Project setup
