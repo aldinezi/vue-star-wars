@@ -31,7 +31,7 @@ export default {
   },
   computed: {
     urlId() {
-      return this.member.url.match(/(\d*)(?=\/$)/g)[0];
+      return this.member && this.member.url.match(/(\d*)(?=\/$)/g)[0];
     },
   },
   methods: {

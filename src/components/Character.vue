@@ -51,7 +51,7 @@ export default {
       return this.$store.state.loading[`${this.$route.params.type}${this.index}`];
     },
     urlId() {
-      return this.character.url.match(/(\d*)(?=\/$)/g)[0];
+      return this.character && this.character.url.match(/(\d*)(?=\/$)/g)[0];
     },
     ship() {
       return this.$store.state.ship;
