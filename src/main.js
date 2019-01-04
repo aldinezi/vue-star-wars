@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import * as Sentry from '@sentry/browser';
 import 'element-ui/lib/theme-chalk/index.css';
 import ElementUI from 'element-ui';
 import moment from 'moment';
@@ -8,6 +9,11 @@ import router from './router';
 import App from './App.vue';
 
 Vue.config.productionTip = false;
+
+Sentry.init({
+  dsn: 'https://614ad71aedef47de98443ed69d107df4@sentry.io/1364682',
+  integrations: [new Sentry.Integrations.Vue({ Vue })],
+});
 
 Vue.use(ElementUI, { locale });
 Vue.filter('formatDate', (value) => {
